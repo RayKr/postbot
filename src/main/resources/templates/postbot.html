@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<title>PostBot</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/css/materialFormStyles.css"/>
+	<link rel="stylesheet" href="/css/animate.min.css"/>
+</head>
+<body>
+	<div class="container" id="formOutterWrapper">
+		<div class="container" id="formInnerWrapper">
+			<form id="materialForm" class="form" method="post" action="/post" role="form" autocomplete="off">
+				<div class="form-group">
+					<div class="col-xs-12 col-md-6">
+						<label class="labels" for="title">标题</label>
+						<input type="text" class="formInput" id="title" name="title"/>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<label class="labels" for="alias">别名</label>
+						<input type="text" class="formInput" id="alias" name="alias"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-12 col-md-6">
+						<label class="labels" for="categories">分类</label>
+						<input type="text" class="formInput" id="categories" name="categories"/>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<label class="labels" for="tags">标签</label>
+						<input type="tel" class="formInput" id="tags" name="tags"/>
+					</div>
+				</div>
+                <div class="form-group">
+                    <div class="col-xs-12 col-md-6">
+                        <label class="labels" for="auth">验证码</label>
+                        <input type="password" class="formInput" id="auth" name="auth"/>
+                    </div>
+                </div>
+				<div class="form-group">
+					<div class="col-xs-12 col-md-6">
+						<label class="labels" for="content">正文</label>
+						<input type="text" class="formInput" id="content" name="content"/>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-12">
+						<button type="submit" class="btn btn-primary green flatButton" id="submit">提交</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<script src="/js/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="/js/materialForm.js"></script>
+</body>
+</html>
